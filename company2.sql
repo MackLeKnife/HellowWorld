@@ -1,0 +1,13 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE employee(empid inter,name varchar(20),title varchar(10));
+INSERT INTO "employee" VALUES(101,'John Smithe','CEO');
+INSERT INTO "employee" VALUES(102,'Raj Reddy','Sysadmin');
+INSERT INTO "employee" VALUES(103,'Jason Bourne','Developer');
+CREATE TABLE department(depid inter, name varchar(20), abbrev varchar(4));
+INSERT INTO "department" VALUES(10,'Administration','admin');
+INSERT INTO "department" VALUES(11,'Human Resources','HR');
+INSERT INTO "department" VALUES(12,'Facilities','Fac');
+INSERT INTO "department" VALUES(13,'Purchasing','Pur');
+INSERT INTO "department" VALUES(14,'Planning','Pl');
+COMMIT;
